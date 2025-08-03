@@ -2,22 +2,34 @@ import React, { useState } from 'react';
 import image2 from '../assets/image7.png';
 import image1 from '../assets/image6.png';
 import image3 from '../assets/image4.png';
+import image4 from '../assets/brainwabe.png';
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const projects = [
+    
     {
       id: 1,
+      title: 'Brainwave Matrix Solutions - Web Development Internship',
+      description: 'Completed a one-month internship focusing on modern web development, building responsive and user-friendly applications with React, Tailwind CSS, and JavaScript.',
+      tech: ['React', 'Tailwind CSS', 'JavaScript', 'Web Development'],
+      image: image4,  
+      github: '#',
+      demo: '#'
+    },
+    
+    {
+      id: 2,
       title: 'Tata Group GenAI Powered Data Analytics Job Simulation',
       description: 'Completed a virtual job simulation on AI-powered data analytics, predictive modeling for credit delinquency, and ethical AI solutions for financial services.',
-      tech: ['GenAI tools (ChatGPT, Gemini)' , 'Predictive Modeling', 'AI Strategy'],
+      tech: ['GenAI tools (ChatGPT, Gemini)', 'Predictive Modeling', 'AI Strategy'],
       image: image3,
       github: '#',
       demo: '#'
     },
     {
-      id: 2,
+      id: 3,
       title: 'HP LIFE Certificate - AI for Beginners',
       description: 'Successfully completed the HP LIFE online course "AI for Beginners," gaining an understanding of AI concepts, applications, data importance, and ethical implications.',
       tech: ['Artificial Intelligence', 'AI Concepts', 'Ethical AI'],
@@ -27,15 +39,15 @@ const Projects = () => {
     },
 
     {
-      id: 3,
+      id: 4,
       title: 'My Portfolio',
       description: 'Developed a modern, fully responsive portfolio website with modular React components, streamlined navigation, and mobile-first design for professional showcase.',
       tech: ['React', 'Vite', 'Tailwind CSS', 'Bash'],
-      image: image1,  
-      github: '#',
+      image: image1,
+      github: 'https://github.com/Lalit-Mohan-Cloud/Portfolio',
       demo: '#'
     },
-     
+
 
   ];
 
